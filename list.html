@@ -1,0 +1,25 @@
+<h3>Filter By</h3>
+                <div class="filter-section">
+                    <h4>Product Category</h4>
+                    <label><input type="checkbox" name="category" value="cpus"> CPUs</label>
+                    <label><input type="checkbox" name="category" value="motherboards"> Motherboards</label>
+                    <label><input type="checkbox" name="category" value="ram"> RAM</label>
+                    <label><input type="checkbox" name="category" value="storage"> Storage</label>
+                    
+                </div>
+                <div class="filter-section">
+                    <h4>Brand</h4>
+                    <label><input type="checkbox" name="brand" value="intel"> Intel</label>
+                    <label><input type="checkbox" name="brand" value="amd"> AMD</label>
+                    <label><input type="checkbox" name="brand" value="nvidia"> NVIDIA</label>
+                    <label><input type="checkbox" name="brand" value="asus"> ASUS</label>
+                    <label><input type="checkbox" name="brand" value="msi"> MSI</label>
+                    <label><input type="checkbox" name="brand" value="corsair"> Corsair</label>
+                </div>
+                <div class="filter-section">
+                    <h4>Price Range</h4>
+                    <input type="range" min="0" max="200000" value="0" class="slider" id="priceRange">
+                    <p>Price: ₹<span id="priceValue">0</span></p>
+                </div>
+                <button class="btn btn-secondary filter-apply">Apply Filters</button>
+            </aside>

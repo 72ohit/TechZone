@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - TechZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">TechZone</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html" id="admin-link" style="display:none;">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="login.html" class="auth-link">Login</a>
+                <a href="register.html" class="auth-link">Register</a>
+                <div class="user-menu" style="display: none;">
+                    <span class="user-name"></span>
+                    <a href="#" class="auth-link" id="logout-link">Logout</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">1</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-page-main">
+        <div class="container cart-content-wrapper">
+            <section class="shopping-cart-section">
+                <h2>Shopping Cart</h2>
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTE1EspICzhMEcxPVAqjF9RfIfBjExrGC1WgxGz5mNQlu_RT-O9YcpDWZF2OEijEipLj15TJ8FYnBIoO77jQ3tjTGRCwxha9QkltRTLgkEOLrccngnTc67MJg" alt="NVIDIA GeForce RTX 4080 Super">
+                            <div class="item-info">
+                                <h3>NVIDIA GeForce RTX 4080 Super Graphics Card</h3>
+                                <p>16GB GDDR6X, High Performance</p>
+                                <p class="stock-status">In Stock</p>
+                                <div class="item-actions">
+                                    <div class="quantity-control">
+                                        <button class="qty-btn">-</button>
+                                        <input type="text" value="1" class="item-qty">
+                                        <button class="qty-btn">+</button>
+                                    </div>
+                                    <a href="#" class="action-link">Delete</a> |
+                                    <a href="#" class="action-link">Save For Later</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">₹109,999</div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-7-7800x3d.jpg" alt="AMD Ryzen 7 7800X3D Processor">
+                            <div class="item-info">
+                                <h3>AMD Ryzen 7 7800X3D Processor</h3>
+                                <p>8 Cores, 16 Threads, AM5</p>
+                                <p class="stock-status">In Stock</p>
+                                <div class="item-actions">
+                                    <div class="quantity-control">
+                                        <button class="qty-btn">-</button>
+                                        <input type="text" value="1" class="item-qty">
+                                        <button class="qty-btn">+</button>
+                                    </div>
+                                    <a href="#" class="action-link">Delete</a> |
+                                    <a href="#" class="action-link">Save For Later</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">₹35,000</div>
+                    </div>
+
+                </div>
+                <div class="cart-subtotal">
+                    <span>Subtotal (2 items):</span>
+                    <span class="subtotal-amount">₹144,999</span>
+                </div>
+            </section>
+
+            <aside class="cart-summary-sidebar">
+                <div class="cart-summary-box">
+                    <h3>Order Summary</h3>
+                    <div class="summary-line">
+                        <span>Subtotal (2 items):</span>
+                        <span>₹144,999</span>
+                    </div>
+                    <button class="btn btn-primary proceed-to-checkout">Proceed to Buy</button>
+                </div>
+
+                <div class="customers-also-bought">
+                    <h3>Customers who bought items in your cart also bought</h3>
+                    <div class="recommended-product-card">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSCbM9S7lJa7qry0IfoFwUe9CQtqiEe7cnDIiJl47C4-lOySq9MKaaKnLBzBfwCiHQH5p06-vKJECdLQZyynspeSBI2HQSnrCWWoHPuuRqaEHw6RrDvgQ0VbZM" alt="Recommended Product">
+                        <div class="recommended-product-info">
+                            <h4>Corsair Vengeance DDR5 32GB Kit</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <p class="mrp">M.R.P: ₹14,000</p>
+                            <p class="price">₹12,500</p>
+                            <button class="btn btn-add-small">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="recommended-product-card">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSDnSW6Z-CGZP_uhfuCom9L1PWilnfcSsv-_e9iPsxXmraYnzNgg4x07jmRb1o7p5zC-YSq3QNJnGTvJyveXPa6wMfk4BuFWjenQohggtC7b7fZx6uC2eUK3w" alt="Recommended Product">
+                        <div class="recommended-product-info">
+                            <h4>NZXT Kraken Z73 RGB AIO Cooler</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="mrp">M.R.P: ₹20,000</p>
+                            <p class="price">₹18,500</p>
+                            <button class="btn btn-add-small">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@techzone.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Address: 123 Tech Park, Pune, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 TechZone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="auth.js"></script>
+    <script src="products.js"></script> </body>
+</html>

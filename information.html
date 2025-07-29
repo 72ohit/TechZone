@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information & FAQs - TechZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" aria-label="TechZone Home Page">TechZone</a>
+            </div>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html" id="admin-link" style="display:none;">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="login.html" class="auth-link">Login</a>
+                <a href="register.html" class="auth-link">Register</a>
+                <div class="user-menu" style="display: none;">
+                    <span class="user-name"></span>
+                    <a href="#" class="auth-link" id="logout-link">Logout</a>
+                </div>
+                <div class="search-bar">
+                    <label for="site-search" class="sr-only">Search the website</label>
+                    <input type="text" id="site-search" placeholder="Search for components..." aria-label="Search through site products">
+                    <button aria-label="Perform search"><i class="fas fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart-icon" aria-label="View Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="info-hero-section">
+            <div class="container info-hero-content">
+                <h1>Knowledge Zone</h1>
+                <p>Your Guide to Building and Optimizing Your Dream PC.</p>
+            </div>
+        </section>
+
+        <section class="info-intro section-padding">
+            <div class="container intro-content">
+                <div class="intro-image">
+                    <img src="https://elements-resized.envatousercontent.com/elements-video-cover-images/0aa04b7d-a8e5-4556-aa69-a64539960e5c/video_preview/video_preview_0000.jpg?w=500&cf_fit=cover&q=85&format=auto&s=fc7c7b98321a80900451a13edafd0268788ee7f8c251c5a380588081efd61b43" alt="People discussing information and data.">
+                </div>
+                <div class="intro-text">
+                    <h2>Information & FAQs</h2>
+                    <p>Welcome to your go-to resource for everything you might want to know about selecting, building, and maintaining your computer. We're committed to full transparency and providing you with the essential knowledge needed to make informed decisions for your PC. Let's walk you through it all!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section section-padding bg-light">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What makes your products reliable?</h3>
+                        <p>We source all our components directly from authorized distributors and trusted manufacturers. Every product undergoes strict quality checks before it leaves our warehouse to ensure you receive genuine, high-performing, and reliable parts.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are your products new and covered by warranty?</h3>
+                        <p>Absolutely! All products sold on TechZone are brand new, unless explicitly stated as 'refurbished' or 'open box.' They come with the full manufacturer's warranty, and we assist you in the warranty claim process if needed.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How can I ensure component compatibility?</h3>
+                        <p>Our product pages provide detailed specifications, including compatibility information (e.g., CPU socket types, RAM generations, motherboard chipsets). We also offer compatibility tools (soon to be implemented) and our expert support team is always ready to assist you in verifying your build plans.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What are your shipping options and return policy?</h3>
+                        <p>We offer various shipping options, including express and standard delivery, with clear tracking information. For returns, we have a hassle-free policy for defective or incorrect items. Please refer to our dedicated 'Services' page for full details on shipping, returns, and warranty claims.</p>
+                    </div>
+                     <div class="faq-item">
+                        <h3>What payment methods do you accept?</h3>
+                        <p>We accept a wide range of secure payment methods, including major credit/debit cards (Visa, Mastercard, American Express), Net Banking, UPI, and popular digital wallets. All transactions are encrypted for your security.</p>
+                    </div>
+                     <div class="faq-item">
+                        <h3>Do you offer technical support for building PCs?</h3>
+                        <p>While we primarily sell components, our team of enthusiasts is available to provide general guidance and troubleshooting tips. For in-depth build assistance, consider our personalized consultation services mentioned on our 'Services' page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="glossary-section section-padding">
+            <div class="container glossary-content">
+                <div class="glossary-image">
+                    <img src="https://as1.ftcdn.net/jpg/01/77/20/82/1000_F_177208227_oscj6x55xky6z8wqfc4uiVedZiXJLaZz.jpg" alt="Diagram showing various computer components.">
+                </div>
+                <div class="glossary-text">
+                    <h2>Component Glossary</h2>
+                    <p>Understanding the jargon can be half the battle in PC building. Here's a quick guide to some common terms you'll encounter:</p>
+                    <ul>
+                        <li>**CPU Socket:** The part of the motherboard that holds the CPU. Must match your CPU's socket type (e.g., AM5, LGA1700).</li>
+                        <li>**RAM (Random Access Memory):** Volatile memory used for temporary data storage, crucial for multitasking and application performance. Look for DDR4 or DDR5 for modern builds.</li>
+                        <li>**PCIe (Peripheral Component Interconnect Express):** A high-speed expansion slot used for graphics cards, SSDs, and other expansion cards. Different generations (PCIe 3.0, 4.0, 5.0) offer varying bandwidths.</li>
+                        <li>**NVMe SSD:** A type of Solid State Drive that connects via PCIe, offering significantly faster read/write speeds than traditional SATA SSDs.</li>
+                        <li>**PSU (Power Supply Unit):** Converts AC power from the wall into DC power needed by your PC components. Ensure adequate wattage for your build.</li>
+                        <li>**TDP (Thermal Design Power):** The maximum amount of heat generated by a computer chip (like a CPU) that the cooling system is designed to dissipate. Helps in choosing appropriate coolers.</li>
+                    </ul>
+                    <p>For a complete list and in-depth explanations, refer to our comprehensive buying guides.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-commitments section-padding bg-light">
+            <div class="container commitments-content">
+                <h2>Our Commitments</h2>
+                <p class="commitment-intro">At TechZone, we stand by certain principles that guide our operations:</p>
+                <div class="commitments-list">
+                    <div class="commitment-item">
+                        <i class="fas fa-award"></i>
+                        <h3>Quality Assurance</h3>
+                        <p>We're dedicated to supplying only top-tier, genuine components. Each product is carefully verified to meet performance standards and ensure durability.</p>
+                    </div>
+                    <div class="commitment-item">
+                        <i class="fas fa-headset"></i>
+                        <h3>Dedicated Support</h3>
+                        <p>Our team of tech enthusiasts is here to provide knowledgeable and friendly support, guiding you through your buying and building process.</p>
+                    </div>
+                    <div class="commitment-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Secure & Transparent Transactions</h3>
+                        <p>Your security is paramount. We ensure all transactions are safe and provide transparent information on pricing, shipping, and policies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <nav aria-label="Footer Quick Links">
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="information.html">Information</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <nav aria-label="Social Media Links">
+                    <ul>
+                        <li><a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Follow us on X (Twitter)"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" aria-label="Subscribe to our YouTube channel"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-contact">
+                <h3>Get In Touch</h3>
+                <address>
+                    <p>Email: <a href="mailto:info@techzone.com">info@techzone.com</a></p>
+                    <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+                    <p>Address: 123 Tech Park, Pune, India</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 TechZone. All rights reserved. | Crafted with passion for technology.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="auth.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>

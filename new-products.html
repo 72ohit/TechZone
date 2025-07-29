@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Added Products - TechZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Specific styles for new products page */
+        .new-products-page-main {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+            min-height: calc(100vh - 180px);
+        }
+        .new-products-page-main h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">TechZone</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html" id="admin-link" style="display:none;">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="login.html" class="auth-link">Login</a>
+                <a href="register.html" class="auth-link">Register</a>
+                <div class="user-menu" style="display: none;">
+                    <span class="user-name"></span>
+                    <a href="#" class="auth-link" id="logout-link">Logout</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="new-products-page-main">
+        <div class="container">
+            <h2>Recently Added Products</h2>
+            <a href="admin.html" class="btn btn-secondary" style="margin-bottom: 30px; display: inline-block;">Back to Admin Panel</a>
+            <div class="products-grid" id="new-products-grid">
+                </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@techzone.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Address: 123 Tech Park, Pune, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 TechZone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="auth.js"></script>
+    <script src="products.js"></script> </body>
+</html>

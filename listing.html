@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - TechZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">TechZone</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="login.html" class="auth-link">Login</a>
+                <a href="register.html" class="auth-link">Register</a>
+                <div class="user-menu" style="display: none;">
+                    <span class="user-name"></span>
+                    <a href="#" class="auth-link" id="logout-link">Logout</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+<main class="listing-page-main">
+        <div class="container listing-content">
+            
+
+            <section class="product-grid-section">
+                <h2>All Components</h2>
+                <div class="products-grid">
+            
+                    <div class="product-card">
+                        <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-7-7800x3d.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">AMD Ryzen 7 7800X3D Processor</a></h3>
+                        <p>8 Cores, 16 Threads, AM5</p>
+                        <div class="price">₹35,000 <span class="old-price">₹38,000</span></div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqSmSGlSFxyaeiwmTyXM-cdIIHkaqD9x99pQ&s" alt="Product Image">
+                        <h3><a href="product.html?id=3">Corsair Vengeance DDR5 32GB Kit</a></h3>
+                        <p>6000MHz, RGB Lighting</p>
+                        <div class="price">₹12,500 <span class="old-price">₹14,000</span></div>
+                        <span class="discount">(11% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://dlcdnwebimgs.asus.com/gain/210C6924-79AA-4E83-A84F-5F23690FE7DF/w1000/h732" alt="Product Image">
+                        <h3><a href="product.html?id=4">ASUS ROG Strix B650-A Gaming WiFi</a></h3>
+                        <p>AM5 Motherboard, ATX</p>
+                        <div class="price">₹22,000 <span class="old-price">₹24,500</span></div>
+                        <span class="discount">(10% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/61D9foQdhDL.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=5">Samsung 990 Pro 2TB NVMe SSD</a></h3>
+                        <p>PCIe 4.0, High Speed Storage</p>
+                        <div class="price">₹18,000 <span class="old-price">₹20,000</span></div>
+                        <span class="discount">(10% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+
+
+                        <div class="product-card">
+                        <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-7-7800x3d.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">AMD Ryzen 7 7800X3D Processor</a></h3>
+                        <div class="price">₹35,000</div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/51A6E9HPocL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">Intel Core i5 12400F 12 Gen Generation Desktop PC</a></h3>
+                        <div class="price">₹9,000 </div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/51Ds5uGwvwL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">Intel Core i7 12700F 12 Gen Generation Desktop PC</a></h3>
+                        
+                        <div class="price">₹25,000 </div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/41mZbJjAVCL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">Cooler Master ML240L Core CPU Liquid Cooler - Black </a></h3>
+                        <p>8 Cores, 16 Threads, AM5</p>
+                        <div class="price">₹5,000 </div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/51qZqQI02oL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">Crucial Pro RAM 32GB Kit (2x16GB) DDR5 5600MT/s (or 5200MT/s or 4800MT/s) Desktop Memory CP2K16G56C46U5</a></h3>
+                    
+                        <div class="price">₹8,000</div>
+                        <span class="discount">(10% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/61FsaYbk3UL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">Crucial RAM 8GB DDR4 3200MHz CL22</a></h3>
+                        <p></p>
+                        <div class="price">₹5,000</div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/31Hqs73SYQL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">Crucial Pro 16GB DDR5-5600 UDIMM CL46 (16Gbit)</a></h3>
+                        
+                        <div class="price">₹5,000</div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/61JkeSh75NL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">Crucial Pro 16GB DDR5-5600 UDIMM CL46 (16Gbit)</a></h3>
+                    
+                        <div class="price">₹3,000</div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/716tBxpIrZL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">Zebronics Intel Core I3 (IInd Generation)</a></h3>
+                        <div class="price">₹5,000 </div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81MY4UCX8wL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">MSI PRO Z790-A MAX WiFi Motherboard</a></h3>
+                        <div class="price">₹6,000 </div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81PagkRvhwL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">MSI PRO H610M-G WiFi Motherboard – Micro-ATX</a></h3>
+                        
+                        <div class="price">₹28,000 </div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81UQEqouNjL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">MSI PRO B860-P WiFi Motherboard, ATX </a></h3>
+                        <div class="price">₹18,000 </div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/814SDu24dnL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">eagate Expansion 1TB External HDD - USB 3.0 </a></h3>
+                        <div class="price">₹6,000</div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/71bBCTIvIIL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">Sandisk 1TB Portable SSD, 800MB/s R</a></h3>
+                        <div class="price">₹9,000 </div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/71H3OVkHOGL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">Samsung 990 EVO Plus SSD 1TB,</a></h3>
+                        
+                        <div class="price">₹8,000 </div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/61MMxdpiUEL._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                        <h3><a href="product.html?id=2">Western Digital WD Green SATA 240GB </a></h3>
+                        <p>8 Cores, 16 Threads, AM5</p>
+                        <div class="price">₹2,000 </div>
+                        <span class="discount">(8% off)</span>
+                        <button class="btn btn-add-to-cart">Add to Cart</button>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@techzone.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Address: 123 Tech Park, Pune, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 TechZone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for price range display (needs more advanced JS for actual filtering)
+        var slider = document.getElementById("priceRange");
+        var output = document.getElementById("priceValue");
+        if (slider && output) { // Check if elements exist on the page
+            output.innerHTML = slider.value; // Display the default slider value
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+            }
+        }
+    </script>
+    <script src="auth.js"></script>
+</body>
+</html>

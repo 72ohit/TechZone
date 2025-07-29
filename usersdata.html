@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users Data - TechZone Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Shared admin page styles */
+        .admin-page-main {
+            padding: 60px 0;
+            background-color: #f4f4f4;
+            min-height: calc(100vh - 180px);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .admin-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 100%;
+            max-width: 900px; /* Wider for user table */
+        }
+        .admin-section {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .admin-section h2 {
+            text-align: left;
+            margin-bottom: 25px;
+            color: #007bff;
+        }
+        .user-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .user-table th, .user-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            word-break: break-word; /* Prevents long emails/passwords from overflowing */
+        }
+        .user-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #333;
+        }
+        .user-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .user-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        @media (max-width: 768px) {
+            .user-table, .user-table thead, .user-table tbody, .user-table th, .user-table td, .user-table tr {
+                display: block;
+            }
+            .user-table thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            .user-table tr {
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+            }
+            .user-table td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+            }
+            .user-table td:before {
+                position: absolute;
+                top: 12px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+                color: #555;
+            }
+            .user-table td:nth-of-type(1):before { content: "Username:"; }
+            .user-table td:nth-of-type(2):before { content: "Email:"; }
+            .user-table td:nth-of-type(3):before { content: "Password:"; } /* Reminder: Dummy password storage */
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" aria-label="TechZone Home Page">TechZone</a>
+            </div>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html" id="admin-link" style="display:none;">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="login.html" class="auth-link">Login</a>
+                <a href="register.html" class="auth-link">Register</a>
+                <div class="user-menu" style="display: none;">
+                    <span class="user-name"></span>
+                    <a href="#" class="auth-link" id="logout-link">Logout</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-page-main">
+        <div class="container admin-content">
+            <section class="admin-section">
+                <h2>All Registered Users</h2>
+                <a href="admin.html" class="btn btn-secondary" style="margin-bottom: 20px;">Back to Admin Panel</a>
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Password (for demo only)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="users-table-body">
+                        </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <nav aria-label="Footer Quick Links">
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="information.html">Information</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <nav aria-label="Social Media Links">
+                    <ul>
+                        <li><a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Follow us on X (Twitter)"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" aria-label="Subscribe to our YouTube channel"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-contact">
+                <h3>Get In Touch</h3>
+                <address>
+                    <p>Email: <a href="mailto:info@techzone.com">info@techzone.com</a></p>
+                    <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+                    <p>Address: 123 Tech Park, Pune, India</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 TechZone. All rights reserved. | Crafted with passion for technology.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="auth.js"></script>
+    <script src="usersdata.js"></script> </body>
+</html>
